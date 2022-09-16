@@ -1,3 +1,9 @@
+:root {
+    --btn-bg-1: rgb(22, 22, 212);
+    --btn-bg-2: rgb(109, 124, 204);
+    --cal-border: rgb(56, 87, 177);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,15 +21,41 @@ body {
     margin: 5rem auto;
     padding: 2rem;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cal-header {
+    display: flex;
+    border: 1px solid lightseagreen;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin-bottom: .25rem;
+}
+
+#left-btn,
+#right-btn {
+    padding: 0 .5rem;
+    border-radius: 5px;
+    background: linear-gradient( var(--btn-bg-1), var(--btn-bg-2));
+    color: #fff;
+    border: none;
+    width: 25px;
+    height: 25px;
 }
 
 .week {
-    
     display: flex;
 }
 
 .day {
     width: 40px;
     height: 40px;
-    border: 1px solid red;
+    border: 1px solid var(--cal-border);
+}
+
+.day:hover {
+    background: rgb(222, 222, 222);
 }
