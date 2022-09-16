@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: steelblue;
+}
+
+#cal-container {
+    background: #fff;
+    width: 60%;
+    max-width: 800px;
+    margin: 5rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.week {
+    
+    display: flex;
+}
+
+.day {
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+}
